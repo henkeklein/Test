@@ -1,16 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-int total = 0;
-int sum(int, int);
 int main()
 {
-    printf("This is a C program\n");
-    total = sum(5, 5);
-    printf("Sum of two numbers: %d\n", total);
+    int first, second, add, diff, mult;
+    float division;
+    char name;
+    printf("Enter two integers\n");
+    printf("Enter your name\n");
+    scanf("%d%d", &first, &second);
+    scanf("%d", &name);
+    add = first+second;
+    diff = first-second;
+    mult = first * second;
+    division = first / (float)second;
+
+    printf("Summan = %d\n", add);
+    printf("Difference = %d\n", diff);
+    printf("Multiplication = &d\n", mult);
+    printf("Division = %.2f\n", division);
+    printf(name);
     return 0;
 }
-int sum(int a, int b)
-{
-    return a+b;
-}
+
 
